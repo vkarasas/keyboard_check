@@ -7,10 +7,10 @@ window.addEventListener("keyup", (event) => {
         button(code, keyName, true);
     }, 100)
    
-    const p = document.createElement("p");
-    p.textContent = `KeyboardEvent: key=${keyName} | code:${code}`
-    document.getElementById("textarea").appendChild(p);
-    window.scrollTo(0, document.body.scrollHeight);
+    // const p = document.createElement("p");
+    // p.textContent = `KeyboardEvent: key=${keyName} | code:${code}`
+    // document.getElementById("textarea").appendChild(p);
+    // window.scrollTo(0, document.body.scrollHeight);
 });
 
 function button(code, keyName, reset) {
@@ -18,4 +18,6 @@ function button(code, keyName, reset) {
     console.log("keyName: ", keyName);
     const border = (!reset) ? '2px solid red': '2px solid black'
     document.getElementById(code).style.border = border;
+    const color = (!reset) ? 'red' : 'black'
+    document.getElementById(code).style.color = color;
 }

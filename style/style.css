@@ -16,24 +16,43 @@
 }
 
 .keyboard {
-  width: 1600px;
+  width: 1700px;
   height: 360px;
   border: 1px solid black;
+  display: grid;
   grid-template-columns: auto auto auto;
   background-color: dodgerblue;
   padding: 10px;
 }
 
-.row {
+.first-grid{
+  width: 1000px;
+  height: 360px;
+}
+
+.first-grid-row {
   display: flex;
   flex-wrap: wrap;
-  width: 1600px;
+  width: 1000px;
   height: 50px;
   padding-bottom: 5px;
   margin: 4px;
 }
 
-#button, 
+#none {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin: 4px;
+}
+
+#fnone {
+  width: 9px;
+  height: 30px;
+  padding: 8px;
+  margin: 2px;
+}
+
 /* 1st Row */
 #Escape,
 #F1,
@@ -48,9 +67,6 @@
 #F10,
 #F11,
 #F12,
-#PrintScreen,
-#ScrollLock,
-#Pause,
 /* 2nd Row */
 #Backquote,
 #Digit1, 
@@ -65,9 +81,7 @@
 #Digit0, 
 #Minus,
 #Equal,
-#Backspace,
 /* 3rd Row */
-#Tab, 
 #KeyQ,
 #KeyW,
 #KeyE,
@@ -80,9 +94,7 @@
 #KeyP,
 #BracketLeft,
 #BracketRight,
-#Backslash,
 /* 4th Row */
-#CapsLock,
 #KeyA,
 #KeyS,
 #KeyD,
@@ -94,9 +106,7 @@
 #KeyL,
 #Semicolon,
 #Quote,
-#Enter,
 /* 5th Row */
-#ShiftLeft,
 #KeyZ,
 #KeyX,
 #KeyC,
@@ -106,18 +116,158 @@
 #KeyM,
 #Comma,
 #Period,
-#Slash,
-#ShiftRight,
-#ArrowUp
-/* 6th Row */
+#Slash
+{
+  width: 30px;
+  height: 30px;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2px;
+}
 
+/*  */
+/* Main Properties */
+#Backspace, #Tab, #Backslash, #CapsLock, #Enter, #ShiftLeft, #ShiftRight, 
+#ControlLeft, #ControlRight, #AltLeft, #Space, #AltRight, #ContextMenu,
+#Start, #Function{
+  height: 30px;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2px;
+}
+/* Width */
+#Backspace{
+  width: 88px;
+
+}
+#Tab{
+  width: 53px;
+
+}
+#Backslash {
+  width: 65px;
+}
+
+#CapsLock {
+  width: 66px;
+}
+
+#Enter {
+  width: 110px;
+}
+
+#ShiftLeft{
+  width: 95px;
+}
+
+#ShiftRight{
+  width: 139px;
+}
+
+#ControlLeft, #ControlRight, #AltLeft, #AltRight, 
+#ContextMenu, #Start, #Function {
+  width: 50px;
+}
+
+#Space {
+  width: 296px;
+}
+
+/*  */
+
+#button
 {
   width: auto;
   height: auto;
   background-color: #f1f1f1;
   border: 2px solid black;
   padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   margin: 2px;
+}
+
+.second-grid{
+  width: 300px;
+  height: 360px;
+}
+
+.second-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 50px;
+  padding-bottom: 5px;
+  margin: 4px;
+}
+
+#PrintScreen,
+#ScrollLock,
+#Pause,
+#Insert,
+#Home,
+#PageUp,
+#Delete,
+#End,
+#PageDown,
+#ArrowUp,
+#ArrowLeft,
+#ArrowDown,
+#ArrowRight
+{
+  width: 30px;
+  height: 30px;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2px;
+}
+
+.third-grid {
+  width: 400px;
+  height: 360px;
+}
+
+.third-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 50px;
+  padding-bottom: 5px;
+  margin: 4px;
+}
+
+#NumLock, #NumpadDivide, #NumpadMultiply, #NumpadSubtract,
+#Numpad7, #Numpad8, #Numpad9, #NumpadAdd,
+#Numpad4, #Numpad5, #Numpad6,
+#Numpad1, #Numpad2, #Numpad3, #NumpadEnter,
+#Numpad0, #NumpadDecimal{
+  width: 30px;
+  height: 30px;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2px;
+}
+
+#Numpad0 {
+  width: 88px;
 }
