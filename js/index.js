@@ -15,22 +15,23 @@
 
 class Keyboard {
     register() {
-        window.addEventListener("keyup", (event) => {
+
+        window.addEventListener("keydown", (event) => {
+            console.log("keydown");
             console.log(event);
-            //button function with timeout 100 milleseconds
+            event.preventDefault();
             this.button(event, false);
+        });
+
+        window.addEventListener("keyup", (event) => {
+            console.log("keyup");
+            console.log(event);
+            event.preventDefault();
+            //button function with timeout 100 milleseconds
             setTimeout(() => {
                 this.button(event, true);
             }, 100)
-        });
-
-        window.addEventListener("keypress", (event) => {
-            console.log(event);
-            //button function with timeout 100 milleseconds
-            this.button(event, false);
-            // setTimeout(() => {
-            //     this.button(event, true);
-            // }, 100)
+            
         });
     }
 

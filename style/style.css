@@ -135,7 +135,7 @@
 /* Main Properties */
 #Backspace, #Tab, #Backslash, #CapsLock, #Enter, #ShiftLeft, #ShiftRight, 
 #ControlLeft, #ControlRight, #AltLeft, #Space, #AltRight, #ContextMenu,
-#Start, #Function{
+#MetaLeft, #Function{
   height: 30px;
   background-color: #f1f1f1;
   border: 2px solid black;
@@ -176,7 +176,7 @@
 }
 
 #ControlLeft, #ControlRight, #AltLeft, #AltRight, 
-#ContextMenu, #Start, #Function {
+#ContextMenu, #MetaLeft, #Function {
   width: 50px;
 }
 
